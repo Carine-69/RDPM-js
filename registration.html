@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/index.css">
+    </head>
+
+<body>
+    <header>
+            <nav class="d-flex justify-content-between">
+                <a href="registration.html" title="Homepage">
+                    <img src="images/logo1.jpg" class="logo" alt="RDPM" />
+                </a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="/" title="Homepage">iyandikishe/injira</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="disasterAlerts.html" title="About Carine">ubutumwa bwi'integuza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="emergencyContacts.html" title="Carine's work">nimero z'ubutabazi</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="safety.html" title="safety tips and newa">ubwirinzi/amakuru </a>
+                    </li>
+                </ul>
+            </nav>
+        <div>
+            <form class="raw g-3" method="post" action="/api/register" id="form" onsubmit="event.preventDefault(); registration();">
+                <div class="col-md-12">
+                    <label for="name" class="form-label">First name</label>
+                    <input type="text" id="first_name" class="form-control" name="first_name" placeholder="Izina ryambere"
+                        required>
+                </div>
+                <div class="col-md-12">
+                    <label for="name" class="form-label">Last name</label>
+                    <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Izina ryanyuma"
+                        required>
+                </div>
+                <div class="col-md-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" name="email" placeholder="email" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="location" class="form-label">city</label>
+                    <input type="text" id="location" class="form-control" name="location" placeholder="akarere utuyemo" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="location1" class="form-label">adress 1</label>
+                    <input type="text" id="location1" class="form-control" name="location1" placeholder="umurenge"
+                        required>
+                </div>
+                <div class="col-md-12">
+                    <label for="location2" class="form-label">adress 2</label>
+                    <input type="text" id="location2" class="form-control" name="location2" placeholder="akagari "
+                        required>
+                </div>
+                <div class="col-md-12">
+                    <label for="Phonenumber" class="form-label">phone number</label>
+                <input type="tel" id="Phonenumber" class="form-control" name="Phone_Number" placeholder="Nimero za telephone" required>
+
+                </div>
+                <div class="col-md-12">
+                    <label for="password" class="form-label">password</label>
+                    <input type="password" id="password" class="form-control" class="form-control" name="password"
+                        placeholder="Ijambobanga" required>
+                </div>
+                <div class="col-md-12">
+                    <span class="form-text">Must be 8-20 characters long</span>
+                </div>
+                <div class="col-md-12">
+                    <label for="confirmPassword" class="form-label">confirm password</label>
+                    <input type="text" id="confirmPassword" class="form-control" name="confirm_password" placeholder="emeza ijambo banga"
+                        required>
+
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-primary" value="register" onclick="registration()" id="registerBtn"> </div>
+            </form>
+        </div>
+        <p>Arleady registered? <a href="login.html">Login</a></p>
+    </header>
+    <script src="registration.js"></script>
+</body>
+
+</html>

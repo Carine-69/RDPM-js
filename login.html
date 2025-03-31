@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="d-flex justify-content-between">
+            <a href="registration.html" title="Homepage">
+                <img src="images/logo1.jpg" class="logo" alt="RDPM" />
+            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="/" title="Homepage">iyandikishe/injira</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="disasterAlerts.html" title="About Carine">ubutumwa bwi'integuza</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="emergencyContacts.html" title="Carine's work">nimero z'ubutabazi</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="safety.html" title="safety tips and newa">ubwirinzi/amakuru </a>
+                </li>
+            </ul>
+        </nav>
+<h2>Login</h2>
+<form onsubmit="event.preventDefault(); login();">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <button type="submit" class="btn btn-primary" value="login" onclick="login()" id="loginBtn">Login</button>
+</form>
+</header>
+<script src="registration.js"></script>
+</body>
+</html>
